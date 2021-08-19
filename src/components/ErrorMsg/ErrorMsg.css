@@ -1,0 +1,57 @@
+.backdrop{
+  position: fixed;
+  top: 0vh;
+  left: 0vw;
+  width: 100vw;
+  height: 100vw;
+  background-color:rgba(100,100,100,0.5);
+  display: block;
+  z-index: 10;
+}
+
+.error_msg {
+  position: fixed;
+  top: 25vh;
+  left: 40vw;
+  width: 20vw;  
+  background-color:rgba(245, 234, 234, 1);
+  display: block;
+  z-index: 1000;
+  border-radius: 4px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.error_msg button{
+  margin-top: 12px;
+  padding: 6px 10px;
+  font: "Lato";
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  display: inline; 
+  color : white; 
+  background-color: rgb(127, 25, 223);
+
+}
+.error_msg middle_box{
+    font: "Lato";
+  font-size: 16px;
+  
+}
+.error_msg header{  
+  padding: 6px 10px;
+  font: "Lato";
+  font-size: 12px;
+  border-radius: 4px 4px  0px 0px ;
+  box-sizing: border-box;
+  display: block; 
+  color : white; 
+  background-color: rgb(127, 25, 223);
+}
+
+.error_msg footer{
+  align-items: right;
+}

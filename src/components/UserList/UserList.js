@@ -1,14 +1,18 @@
-import React from "react";
+import React  from "react";
 import "./UserList.css"
+var list_jsx = [];
 
-const UserList = () => {
+const UserList = (props) => {
+    console.log("props.user_input_list.length:" + props.user_input_list.length);
     return (
       <div className="userlist">
         <ul>
           <div>
-            <li> Max (31 Years Old) </li>
-            <li> Zaheem (42 Years Old) </li>
-            <li> Fatima (10 years old) </li>
+              {props.user_input_list.map(ui => (
+              <li>
+                {ui["name"]} ( {ui["age"]} years of age)
+              </li>
+          ))}
           </div>
         </ul>
       </div>
